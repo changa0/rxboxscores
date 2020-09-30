@@ -1,0 +1,102 @@
+select {
+  font-family: Roboto, Arial;
+  font-size: 1.5rem;
+  color: #00008b;
+  background-color: #F5F5F5;
+  border: hidden;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../dropdown-icon.png");
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: 100% 50%;
+  padding-right: 3%;
+  padding-left: 5px;
+}
+
+.active {
+  color: #00008b;
+}
+
+.inactive {
+  color: red;
+}
+
+.buttons {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+button {
+  color: #000000;
+  background-color: #B3B3B3;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  padding: 0.55rem 0.8rem;
+}
+
+button:hover {
+  background-color: #FFE88B;
+  transition: 0.2s;
+}
+
+button:active {
+  background-color:#FF811A;
+}
+
+.directional {
+  display: none;
+}
+
+@media all and (max-width:1200px) {
+  select {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: none;
+}
+
+  .directional {
+      display: inline-block;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 2rem;
+      border-radius: 30%;
+      padding-top: 0;
+      padding-bottom: 0.3rem;
+  }
+}
+
+@media all and (max-width:500px) {
+  select {
+      font-size: 1.6rem;
+      text-align: center;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-image: none;
+  }
+
+  .directional {
+      padding-bottom: 0.45rem;
+      border-radius: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.6rem;
+  }
+}
+
+@media all and (max-width:368px)
+and (orientation:portrait) {
+  select { font-size: 1.35rem; }
+  .directional { margin: auto; }
+}
