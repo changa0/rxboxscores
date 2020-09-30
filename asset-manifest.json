@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rxboxscores/static/css/main.d59c5262.chunk.css",
+    "main.js": "/rxboxscores/static/js/main.306213dd.chunk.js",
+    "main.js.map": "/rxboxscores/static/js/main.306213dd.chunk.js.map",
+    "runtime-main.js": "/rxboxscores/static/js/runtime-main.28c9a1fe.js",
+    "runtime-main.js.map": "/rxboxscores/static/js/runtime-main.28c9a1fe.js.map",
+    "static/js/2.96c88239.chunk.js": "/rxboxscores/static/js/2.96c88239.chunk.js",
+    "static/js/2.96c88239.chunk.js.map": "/rxboxscores/static/js/2.96c88239.chunk.js.map",
+    "index.html": "/rxboxscores/index.html",
+    "precache-manifest.913afefff2509ab5fa5775ee6c33ccd0.js": "/rxboxscores/precache-manifest.913afefff2509ab5fa5775ee6c33ccd0.js",
+    "service-worker.js": "/rxboxscores/service-worker.js",
+    "static/css/main.d59c5262.chunk.css.map": "/rxboxscores/static/css/main.d59c5262.chunk.css.map",
+    "static/js/2.96c88239.chunk.js.LICENSE.txt": "/rxboxscores/static/js/2.96c88239.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28c9a1fe.js",
+    "static/js/2.96c88239.chunk.js",
+    "static/css/main.d59c5262.chunk.css",
+    "static/js/main.306213dd.chunk.js"
+  ]
+}
