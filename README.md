@@ -3,9 +3,7 @@
 
 ## View today's nba game scores
 
-[Use application here](https://changa0.github.io/boxscores/)
-
-[Chrome extension version](https://github.com/changa0/boxscoreschrome)
+[Use application here](https://changa0.github.io/rxboxscores/)
 
 An application for viewing NBA box scores with a less-heavy UI redone in React
 
