@@ -165,7 +165,7 @@ a {color: #979B89}
 }
 
 .message {
-  margin-bottom: 0.5rem;
+  margin-bottom: 15px;
   animation-name: blink;
   animation-duration: 0.7s;
   animation-timing-function: cubic-bezier(1, 0, 0.2, 1);

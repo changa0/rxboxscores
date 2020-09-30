@@ -35,7 +35,6 @@ function dateValidationHelper(date) {
 }
 
 function App() {
-  // const SCOREBOARD_URL = "https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/gamedetail/0041900312_gamedetail.json";
   const SCOREBOARD_URL = "https://data.nba.net/prod/v2/";
   const SCOREBOARD_URL_SUFFIX = "/scoreboard.json?noCache=";
 

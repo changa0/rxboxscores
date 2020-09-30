@@ -103,7 +103,7 @@ function Row(props) {
 function TeamBoxscore(props) {
   const teamData = props.teamData;
 
-  const playerData = teamData.pstsg;
+  const playerData = teamData.pstsg ? teamData.pstsg : []; // player data might not be generated if game hasn't started
   let inactive = []
   
   const body = playerData.map( (player) => {
@@ -208,23 +208,23 @@ function Table(props) {
   const season = scoreboard[selected].seasonYear;
 
   // const [ boxscore, setBoxscore ] = useState(samples.longOt.g); // use for debugging
-  const [ boxscore, setBoxscore ] = useState(samples.blankData.g); // use for debugging
+  const [ boxscore, setBoxscore ] = useState(samples.blankData.g);
   const [ tableHasError, setTableHasError ] = useState(false);
 
-  const leftScore = boxscore.lpla.vs;
-  const rightScore = boxscore.lpla.hs;
+  const leftScore = boxscore.lpla ? boxscore.lpla.vs : 0;
+  const rightScore = boxscore.lpla ? boxscore.lpla.hs : 0;
   let gameStatus;
 
   if ( boxscore.stt === 'Final' ) {
     gameStatus = 'Final';
   } else {
-    const clock = boxscore.cl.replace(/^0+/, '');
+    const clock = boxscore.cl ? boxscore.cl.replace(/^0+/, '') : '';
     gameStatus = `${boxscore.stt}  ${clock}`;
   }
 
   useEffect(() => {
     const gameUrl = genUrl(gameId, season);
-    // "https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2019/scores/gamedetail/0041900306_gamedetail.json"
+
     fetch(gameUrl)
     .then(res => res.json())
     .then(
@@ -245,6 +245,16 @@ function Table(props) {
   }
 
   if (!tableHasError) {
+    if (!boxscore.p) {
+      return (
+        <div id="placeholder">
+          <h2>{`${boxscore.vls.tc} ${boxscore.vls.tn}`} at {`${boxscore.hls.tc} ${boxscore.hls.tn}`}</h2>
+          <h1 className="message">Game begins at</h1>
+          <h2 className="message">{gameStatus}</h2>
+          { scoreboard ? <TeamRecords game={scoreboard[selected]} /> : <span>Loading...</span> }
+        </div>
+      );
+    }
     return (
       <div id="placeholder">
         <h2>{`${boxscore.vls.tc} ${boxscore.vls.tn}`} at {`${boxscore.hls.tc} ${boxscore.hls.tn}`}</h2>
