@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rxboxscores/static/css/main.3074acec.chunk.css",
-    "main.js": "/rxboxscores/static/js/main.529d69ac.chunk.js",
-    "main.js.map": "/rxboxscores/static/js/main.529d69ac.chunk.js.map",
+    "main.js": "/rxboxscores/static/js/main.962048bb.chunk.js",
+    "main.js.map": "/rxboxscores/static/js/main.962048bb.chunk.js.map",
     "runtime-main.js": "/rxboxscores/static/js/runtime-main.28c9a1fe.js",
     "runtime-main.js.map": "/rxboxscores/static/js/runtime-main.28c9a1fe.js.map",
     "static/js/2.96c88239.chunk.js": "/rxboxscores/static/js/2.96c88239.chunk.js",
     "static/js/2.96c88239.chunk.js.map": "/rxboxscores/static/js/2.96c88239.chunk.js.map",
     "index.html": "/rxboxscores/index.html",
-    "precache-manifest.0dc09d92b433bbfbb24fc7ed93280599.js": "/rxboxscores/precache-manifest.0dc09d92b433bbfbb24fc7ed93280599.js",
+    "precache-manifest.7983acbccce5725f35e2b3e0e8989917.js": "/rxboxscores/precache-manifest.7983acbccce5725f35e2b3e0e8989917.js",
     "service-worker.js": "/rxboxscores/service-worker.js",
     "static/css/main.3074acec.chunk.css.map": "/rxboxscores/static/css/main.3074acec.chunk.css.map",
     "static/js/2.96c88239.chunk.js.LICENSE.txt": "/rxboxscores/static/js/2.96c88239.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.28c9a1fe.js",
     "static/js/2.96c88239.chunk.js",
     "static/css/main.3074acec.chunk.css",
-    "static/js/main.529d69ac.chunk.js"
+    "static/js/main.962048bb.chunk.js"
   ]
 }

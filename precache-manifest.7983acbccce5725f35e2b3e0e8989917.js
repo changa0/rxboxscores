@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fd51441aa5bdb3a6c970cccd83b18a3",
+    "revision": "7197a6384f3fdd539f11dc37a8efeb6e",
     "url": "/rxboxscores/index.html"
   },
   {
-    "revision": "a1606ae4a258f13ba947",
+    "revision": "34b69e4977057f96518a",
     "url": "/rxboxscores/static/css/main.3074acec.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rxboxscores/static/js/2.96c88239.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a1606ae4a258f13ba947",
-    "url": "/rxboxscores/static/js/main.529d69ac.chunk.js"
+    "revision": "34b69e4977057f96518a",
+    "url": "/rxboxscores/static/js/main.962048bb.chunk.js"
   },
   {
     "revision": "26504f4431fd2651bd78",
