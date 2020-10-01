@@ -116,9 +116,9 @@ function App() {
             <h2>Box Scores</h2>
             <p>Get a box score from today's games</p>
           </div>
-          <Nav games={scoreboard} selectHandler={handleSelectedGame} selected={selectedGame} handleRefresh={handleRefresh}/>
+          <Nav games={scoreboard} selectHandler={handleSelectedGame} selected={selectedGame} handleRefresh={handleRefresh} />
         </header>
-        {scoreboard.length > 0 ? <Table scoreboard={scoreboard} selected={selectedGame} lastRefreshed={lastRefreshed}/> : <h2 className="no-games">No games available today</h2>}
+        {scoreboard.length > 0 ? <Table scoreboard={scoreboard} selected={selectedGame} lastRefreshed={lastRefreshed} /> : <h2 className="no-games">No games available today</h2>}
       </div>
     );
   } else if ( scoreboard.length === 0 ) {

@@ -50,10 +50,10 @@ function ButtonCluster(props) {
 
     return (
         <div className="buttons" >
-        <button type="button" className="directional" onClick={() => arrowNav('l')}>&laquo;</button>
-        <button type="button" onClick={refreshBtnHandler}>Update scores</button>
-        <button type="button" className="directional" onClick={() => arrowNav('r')}>&raquo;</button>
-    </div>
+            <button type="button" className="directional" onClick={() => arrowNav('l')}>&laquo;</button>
+            <button type="button" onClick={refreshBtnHandler}>Update scores</button>
+            <button type="button" className="directional" onClick={() => arrowNav('r')}>&raquo;</button>
+        </div>
     )
 }
 
@@ -66,7 +66,7 @@ function Nav(props) {
     return (
         <React.Fragment>
             <Selector games={games} handler={selectHandler} selected={selected} />
-            <ButtonCluster handleRefresh={handleRefresh} handleSelectedGame={selectHandler} selected={selected} maxLength={games.length}/>
+            <ButtonCluster handleRefresh={handleRefresh} handleSelectedGame={selectHandler} selected={selected} maxLength={games.length} />
         </React.Fragment>
     )
 }

@@ -111,7 +111,7 @@ function TeamBoxscore(props) {
       inactive.push(`${player.fn} ${player.ln}`);
     } else {
       return (
-        <Row key={`${player.fn}${player.ln}`} player={player}/>
+        <Row key={`${player.fn}${player.ln}`} player={player} />
       );
     }
     return null;
@@ -263,7 +263,7 @@ function Table(props) {
         <h1 className={rightScore > leftScore ? 'leading' : ''}>{rightScore}</h1>
         <h2>{gameStatus}</h2>
         <QuarterBox currentQuarter={boxscore.p} away={boxscore.vls} home={boxscore.hls} />
-        <MainBoxscore data={boxscore}/>
+        <MainBoxscore data={boxscore} />
         { scoreboard ? <TeamRecords game={scoreboard[selected]} /> : <span>Loading...</span> }
       </div>
     );
